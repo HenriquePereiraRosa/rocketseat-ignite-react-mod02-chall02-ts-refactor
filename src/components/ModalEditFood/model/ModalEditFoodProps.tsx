@@ -1,8 +1,8 @@
-import { FoodModel } from "../../../model/Food/FoodModel";
+import { Food } from "../../../model/Food/Food";
 
-export interface ModalEditFoodProps {
-  isOpen: boolean,
-  editingFood: any,
-  setIsOpen(): void,
-  handleUpdateFood(data: FoodModel): void
+export interface ModalEditFoodProperties {
+  isOpen: boolean;
+  editingFood: any;
+  setIsOpen(): void;
+  handleUpdateFood(data: Food): void;
 }

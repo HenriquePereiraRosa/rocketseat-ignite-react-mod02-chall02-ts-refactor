@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { FoodStyleProperties } from './model/FoodStyleProperties';
+import { FoodContainerProps } from './model/FoodContainerProps';
 
-export const Container = styled.div<FoodStyleProperties>`
+export const Container = styled.div<FoodContainerProps>`
   background: #f0f0f5;
   border-radius: 8px;
 

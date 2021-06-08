@@ -2,11 +2,11 @@ import { Component } from 'react';
 
 import Header from '../../components/Header';
 import api from '../../services/api';
-import Food from '../../components/Food';
+import FoodComponent from '../../components/Food';
 import ModalAddFood from '../../components/ModalAddFood';
 import ModalEditFood from '../../components/ModalEditFood';
 import { FoodsContainer } from './styles';
-import { FoodModel } from './../../model/Food/FoodModel';
+import { Food } from './../../model/Food/Food';
 import { DashBoardState } from './model/DashBoardState';
 import { DashboardProps } from './model/DashBoardProps';
 
@@ -22,7 +22,7 @@ class Dashboard extends Component<DashboardProps, DashBoardState> {
     this.setState({ foods: response.data });
   }
 
-  handleAddFood = async (food: FoodModel) => {
+  handleAddFood = async (food: Food) => {
     const { foods } = this.state;
 
     try {
@@ -37,7 +37,7 @@ class Dashboard extends Component<DashboardProps, DashBoardState> {
     }
   }
 
-  handleUpdateFood = async (food: FoodModel) => {
+  handleUpdateFood = async (food: Food) => {
     const { foods, editingFood } = this.state;
 
     try {
@@ -78,7 +78,7 @@ class Dashboard extends Component<DashboardProps, DashBoardState> {
     this.setState({ editModalOpen: !editModalOpen });
   }
 
-  handleEditFood = (food: FoodModel) => {
+  handleEditFood = (food: Food) => {
     this.setState({ editingFood: food, editModalOpen: true });
   }
 
@@ -103,7 +103,7 @@ class Dashboard extends Component<DashboardProps, DashBoardState> {
         <FoodsContainer data-testid="foods-list">
           {foods &&
             foods.map(food => (
-              <Food
+              <FoodComponent
                 key={food.id}
                 food={food}
                 handleDelete={this.handleDeleteFood}

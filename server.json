@@ -12,7 +12,7 @@
       "id": 2,
       "name": "Veggie",
       "description": "Macarrão com pimentão, ervilha e ervas finas colhidas no himalaia.",
-      "price": "21.90",
+      "price": "31.99",
       "available": false,
       "image": "https://storage.googleapis.com/golden-wind/bootcamp-gostack/desafio-food/food2.png"
     },
@@ -25,12 +25,20 @@
       "image": "https://picsum.photos/410/200/"
     },
     {
-      "image": "https://picsum.photos/410/100/",
+      "image": "https://picsum.photos/410/200/",
       "name": "Baio de 3",
-      "price": "900",
+      "price": "90.80",
       "description": "Baião mutcho loko",
       "available": true,
       "id": 4
+    },
+    {
+      "image": "https://picsum.photos/410/200/",
+      "name": "Frutos do mar",
+      "price": "122.90",
+      "description": "Cortes maritmos",
+      "available": true,
+      "id": 5
     }
   ]
 }

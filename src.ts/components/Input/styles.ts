@@ -1,7 +1,7 @@
 import styled, { css } from 'styled-components';
-import { InputStyleProperties } from './model/InputStyleProperties';
+import { InputContainerProps } from './model/InputContainerProps';
 
-export const Container = styled.div<InputStyleProperties>`
+export const Container = styled.div<InputContainerProps>`
   display: flex;
   align-items: center;
 

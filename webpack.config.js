@@ -29,7 +29,7 @@ module.exports = {
     rules: [
       {
         test: /\.(j|t)sx$/,
-        exclude: /node_modules/,
+        exclude: [/node_modules/, /src.js/, /src.ts/],
         use: {
           loader: 'babel-loader',
           options: {
@@ -41,7 +41,7 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        exclude: /node_modules/,
+        exclude: [/node_modules/, /src.js/, /src.ts/],
         use: ['style-loader', 'css-loader', 'sass-loader']
       },
       {

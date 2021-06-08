@@ -5,7 +5,7 @@ import { Form } from './styles';
 import Modal from '../Modal';
 import Input from '../Input';
 import { ModalAddFoodProps } from './model/ModalAddFoodProps';
-import { FoodModel } from './../../model/Food/FoodModel';
+import { Food } from '../../model/Food/Food';
 
 class ModalAddFood extends Component<ModalAddFoodProps> {
   formRef: any;
@@ -16,7 +16,7 @@ class ModalAddFood extends Component<ModalAddFoodProps> {
     this.formRef = createRef();
   }
 
-  handleSubmit = async (data: FoodModel) => {
+  handleSubmit = async (data: Food) => {
     const { setIsOpen, handleAddFood } = this.props;
 
     handleAddFood(data);

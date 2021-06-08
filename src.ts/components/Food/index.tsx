@@ -6,7 +6,7 @@ import api from '../../services/api';
 import { FoodProps } from './model/FoodProps';
 import { StateProps } from './model/StateProps';
 
-class Food extends Component<FoodProps, StateProps> {
+class FoodComponent extends Component<FoodProps, StateProps> {
   constructor(public props: FoodProps) {
     super(props);
 
@@ -91,4 +91,4 @@ class Food extends Component<FoodProps, StateProps> {
   }
 };
 
-export default Food;
+export default FoodComponent;
